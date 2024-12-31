@@ -1,10 +1,12 @@
 import './App.css'
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import {Header} from "./Header";
+import {Address} from "./Address";
 
 function App() {
     return (
-        <TonConnectUIProvider manifestUrl="https://4c9b-193-19-254-242.ngrok-free.app/tonconnect-manifest.json">
+        <TonConnectUIProvider manifestUrl="https://olehkhovanets.github.io/tonconnect/dist/tonconnect-manifest.json">
+            <Address/>
             <Header/>
         </TonConnectUIProvider>
     );
